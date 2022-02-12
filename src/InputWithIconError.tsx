@@ -25,11 +25,16 @@ export function InputWithIconError() {
                 </label>
                 <div className="absolute right-0 inset-y-0 flex items-center px-2 text-red-600">
                     <div className="relative flex items-center group">
-                        ℹ
-                        <div className="absolute left-0 items-center hidden ml-6 group-hover:flex">
+                        <span
+                            className="iconify-inline"
+                            data-icon="bx:bx-message-error"
+                        ></span>
+                        {/*ℹ*/}
+                        <div className="absolute left-0 items-center hidden_ ml-6 group-hover:flex flex">
                             <div className="w-3 h-3 -mr-2 rotate-45 bg-black"></div>
                             <span className="relative z-10 p-2 text-xs leading-none text-white whitespace-nowrap bg-black shadow-lg">
-                                A right aligned tooltip.
+                                <p>1. A right aligned tooltip. </p>
+                                <p>2. Error example text</p>
                             </span>
                         </div>
                     </div>

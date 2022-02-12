@@ -1,4 +1,7 @@
 import React from 'react';
+import '@iconify/iconify';
+import '@purge-icons/generated';
+
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { InputWithIconError } from './InputWithIconError';
 

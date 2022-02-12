@@ -18,11 +18,13 @@
     "test:ci": "npm run test && npm run build"
   },
   "dependencies": {
+    "@iconify/iconify": "^2.1.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.2.1"
   },
   "devDependencies": {
+    "@iconify/json": "^2.0.36",
     "@testing-library/react": "^12.1.2",
     "@types/jest": "^27.4.0",
     "@types/react": "^17.0.39",
@@ -42,6 +44,7 @@
     "ts-jest": "^27.1.3",
     "typescript": "^4.5.5",
     "vite": "^2.8.1",
+    "vite-plugin-purge-icons": "^0.7.0",
     "vite-tsconfig-paths": "^3.4.0",
     "watchexec-bin": "^1.0.0"
   }
