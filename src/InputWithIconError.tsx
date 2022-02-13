@@ -23,16 +23,36 @@ export function InputWithIconError() {
                 <label htmlFor="name" className="is-float-label bg-white text-gray-500">
                     Name
                 </label>
+            </div>
+
+            <div className="has-float-label ">
+                <input
+                    type="text"
+                    id="name"
+                    autoComplete="off"
+                    placeholder="Name Invalid"
+                    className="
+                            control-with-float-label
+                            outline-none
+                            focus:shadow-outline
+                            border
+                            w-full
+                            px-1
+                            border-red-400
+                        "
+                />
+                <label htmlFor="name" className="is-float-label bg-white text-gray-500">
+                    Name
+                </label>
                 <div className="absolute right-0 inset-y-0 flex items-center px-2 text-red-600">
                     <div className="relative flex items-center group">
                         <span
                             className="iconify-inline"
                             data-icon="bx:bx-message-error"
                         ></span>
-                        {/*ℹ*/}
-                        <div className="absolute left-0 items-center hidden_ ml-6 group-hover:flex flex">
-                            <div className="w-3 h-3 -mr-2 rotate-45 bg-black"></div>
-                            <span className="relative z-10 p-2 text-xs leading-none text-white whitespace-nowrap bg-black shadow-lg">
+                        <div className="absolute left-0 items-center hidden_ ml-7 group-hover:flex flex">
+                            <div className="w-3 h-3 -mr-2 rotate-45 bg-rose-600"></div>
+                            <span className="relative z-10 p-2 text-xs leading-none text-white whitespace-nowrap bg-rose-600 rounded">
                                 <p>1. A right aligned tooltip. </p>
                                 <p>2. Error example text</p>
                             </span>
@@ -41,7 +61,35 @@ export function InputWithIconError() {
                 </div>
             </div>
 
-            <div className="relative">
+            <div className="has-float-label ">
+                <input
+                    type="text"
+                    id="name"
+                    autoComplete="off"
+                    placeholder="Name Valid"
+                    className="
+                            control-with-float-label
+                            outline-none
+                            focus:shadow-outline
+                            border
+                            w-full
+                            px-1
+                        "
+                />
+                <label htmlFor="name" className="is-float-label bg-white text-gray-500">
+                    Name
+                </label>
+                <div className="absolute right-0 inset-y-0 flex items-center px-2 text-green-600">
+                    <div className="relative flex items-center group">
+                        <span
+                            className="iconify-inline"
+                            data-icon="clarity:success-standard-line"
+                        ></span>
+                    </div>
+                </div>
+            </div>
+
+            {/*            <div className="relative">
                 <input
                     className="appearance-none border-2 border-red-300 bg-red-50 transition-colors rounded-md w-full py-2 px-3 text-gray-8w00 leading-tight focus:outline-none focus:ring-red-500 focus:border-red-500 focus:shadow-outline"
                     id="username"
@@ -62,7 +110,7 @@ export function InputWithIconError() {
                         />
                     </svg>
                 </div>
-            </div>
+            </div>*/}
         </div>
     );
 }

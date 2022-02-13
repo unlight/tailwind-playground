@@ -11,13 +11,10 @@ export function App() {
             <div>
                 <nav>
                     <ul>
-                        <li className="inline mx-4">
+                        <li className="inline mx-2">
                             <Link to="/">Home</Link>
                         </li>
-                        <li className="inline mx-4">
-                            <Link to="/about">About</Link>
-                        </li>
-                        <li className="inline mx-4">
+                        <li className="inline mx-2">
                             <Link to="/input-with-icon-error">InputWithIconError</Link>
                         </li>
                     </ul>
