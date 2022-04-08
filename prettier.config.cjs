@@ -1,4 +1,4 @@
-{
+module.exports = {
     printWidth: 88,
     trailingComma: 'all',
     tabWidth: 4,
@@ -13,4 +13,7 @@
             },
         },
     ],
+    plugins: [
+        'prettier-plugin-tailwindcss'
+    ]
 }

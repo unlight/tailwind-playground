@@ -5,55 +5,61 @@ export function InputWithIconError() {
         <div className="container mx-auto my-1 w-1/3 space-y-2">
             <h4>Form example</h4>
 
-            <div className="has-float-label ">
+            <div className="float-label-container ">
                 <input
                     type="text"
                     id="name"
                     autoComplete="off"
                     placeholder="Name"
                     className="
-                            control-with-float-label
-                            outline-none
                             focus:shadow-outline
-                            border
+                            float-label-control
                             w-full
+                            border
                             px-1
+                            outline-none
                         "
                 />
-                <label htmlFor="name" className="is-float-label bg-white text-gray-500">
+                <label
+                    htmlFor="name"
+                    className="float-label-self bg-white text-gray-500"
+                >
                     Name
                 </label>
             </div>
 
-            <div className="has-float-label ">
+            <div className="float-label-container ">
                 <input
                     type="text"
                     id="name"
                     autoComplete="off"
                     placeholder="Name Invalid 1"
                     className="
-                            control-with-float-label
-                            outline-none
                             focus:shadow-outline
-                            border
+                            float-label-control
                             w-full
-                            px-1
-                            placeholder:text-red-400
+                            border
                             border-red-400
+                            px-1
+                            outline-none
+                            placeholder:text-red-400
                         "
                 />
-                <label htmlFor="name" className="is-float-label bg-white text-gray-500">
+                <label
+                    htmlFor="name"
+                    className="float-label-self bg-white text-gray-500"
+                >
                     Name 1
                 </label>
-                <div className="absolute right-0 inset-y-0 flex items-center px-2 text-red-600">
-                    <div className="relative flex items-center group">
+                <div className="absolute inset-y-0 right-0 flex items-center px-2 text-red-600">
+                    <div className="group relative flex items-center">
                         <span
                             className="iconify-inline"
                             data-icon="bx:bx-message-error"
                         ></span>
-                        <div className="absolute left-0 items-center hidden_ ml-7 group-hover:flex flex">
-                            <div className="w-3 h-3 -mr-2 rotate-45 bg-rose-600"></div>
-                            <span className="relative z-10 p-2 text-xs leading-none text-white whitespace-nowrap bg-rose-600 rounded">
+                        <div className="hidden_ absolute left-0 ml-7 flex items-center group-hover:flex">
+                            <div className="-mr-2 h-3 w-3 rotate-45 bg-rose-600"></div>
+                            <span className="relative z-10 whitespace-nowrap rounded bg-rose-600 p-2 text-xs leading-none text-white">
                                 <p>1. A right aligned tooltip. </p>
                                 <p>2. Error example text</p>
                             </span>
@@ -63,31 +69,31 @@ export function InputWithIconError() {
             </div>
 
             <div className="">
-                <div className="has-float-label ">
+                <div className="float-label-container ">
                     <input
                         type="text"
                         id="name"
                         autoComplete="off"
                         placeholder="Name Invalid 2"
                         className="
-                            control-with-float-label
-                            outline-none
                             focus:shadow-outline
-                            border
+                            float-label-control
                             w-full
-                            px-1
-                            placeholder:text-red-400
+                            border
                             border-red-400
+                            px-1
+                            outline-none
+                            placeholder:text-red-400
                         "
                     />
                     <label
                         htmlFor="name"
-                        className="is-float-label bg-white text-gray-500"
+                        className="float-label-self bg-white text-gray-500"
                     >
                         Name 2
                     </label>
-                    <div className="absolute right-0 inset-y-0 flex items-center px-2 text-red-600">
-                        <div className="relative flex items-center group">
+                    <div className="absolute inset-y-0 right-0 flex items-center px-2 text-red-600">
+                        <div className="group relative flex items-center">
                             <span
                                 className="iconify-inline"
                                 data-icon="bx:bx-message-error"
@@ -101,26 +107,29 @@ export function InputWithIconError() {
                 </div>
             </div>
 
-            <div className="has-float-label ">
+            <div className="float-label-container ">
                 <input
                     type="text"
                     id="name"
                     autoComplete="off"
                     placeholder="Name Valid"
                     className="
-                            control-with-float-label
-                            outline-none
                             focus:shadow-outline
-                            border
+                            float-label-control
                             w-full
+                            border
                             px-1
+                            outline-none
                         "
                 />
-                <label htmlFor="name" className="is-float-label bg-white text-gray-500">
+                <label
+                    htmlFor="name"
+                    className="float-label-self bg-white text-gray-500"
+                >
                     Name
                 </label>
-                <div className="absolute right-0 inset-y-0 flex items-center px-2 text-green-600">
-                    <div className="relative flex items-center group">
+                <div className="absolute inset-y-0 right-0 flex items-center px-2 text-green-600">
+                    <div className="group relative flex items-center">
                         <span
                             className="iconify-inline"
                             data-icon="clarity:success-standard-line"
