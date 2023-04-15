@@ -5,11 +5,11 @@ import PurgeIcons from 'vite-plugin-purge-icons';
 
 // https://vitejs.dev/config/
 export default function ({}: ConfigEnv): UserConfigExport {
-    return defineConfig({
-        plugins: [tsconfigPaths(), reactRefresh(), PurgeIcons({})],
-        build: {
-            assetsDir: '.',
-            brotliSize: false,
-        },
-    });
+  return defineConfig({
+    plugins: [tsconfigPaths(), reactRefresh(), PurgeIcons({})],
+    build: {
+      assetsDir: '.',
+      brotliSize: false,
+    },
+  });
 }
